@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ExploreWorld - Travel App</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #c05a5a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://source.unsplash.com/1600x600/?travel,nature') no-repeat center center/cover;
+      height: 90vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .search-section {
+      background: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .search-section input {
+      width: 60%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    .search-section button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background-color: #fff;
+    }
+
+    .feature-box {
+      width: 300px;
+      margin: 20px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .feature-box h3 {
+      color: #007BFF;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .search-section input {
+        width: 90%;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Destinations</a>
+    <a href="#">Bookings</a>
+    <a href="#">Blogs</a>
+    <a href="#">Profile</a>
+  </nav>
+
+  <header>
+    <h1>Explore the World</h1>
+    <p>Discover new places, book trips, and manage your adventures</p>
+  </header>
+
+  <section class="search-section">
+    <h2>Search Destinations</h2>
+    <input type="text" placeholder="Where do you want to go?">
+    <button>Search</button>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>🌍 Explore Destinations</h3>
+      <p>Find amazing places tailored to your interests.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🧳 Book Your Trip</h3>
+      <p>Quick and secure booking for flights, hotels, and tours.</p>
+    </div>
+    <div class="feature-box">
+      <h3>📅 Manage Itinerary</h3>
+      <p>Keep track of your trip details and travel plans.</p>
+    </div>
+    <div class="feature-box">
+      <h3>📝 Travel Blogs</h3>
+      <p>Read stories and tips from fellow travelers around the globe.</p>
+    </div>
+    <div class="feature-box">
+      <h3>⭐ Reviews</h3>
+      <p>Check out user reviews before you travel.</p>
+    </div>
+    <div class="feature-box">
+      <h3>👤 User Profiles</h3>
+      <p>Save favorites, view bookings, and personalize your experience.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ExploreWorld Travel App. All rights reserved.
+  </footer>
+
+</body>
+</html>
